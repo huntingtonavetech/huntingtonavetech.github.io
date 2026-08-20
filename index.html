@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Huntington Avenue Technologies LLC</title>
 
-  <!-- Roboto -->
-
+  <!-- Roboto + Roboto Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  >
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
       --background: #0d1117;
-      --surface: #161b22;
       --text: #e6edf3;
       --muted: #8b949e;
       --accent: #58a6ff;
@@ -37,17 +35,6 @@
       font-family: "Roboto", sans-serif;
       display: flex;
       flex-direction: column;
-    }
-
-    header {
-      padding: 28px 40px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .logo {
-      font-size: 1.1rem;
-      font-weight: 500;
-      letter-spacing: 0.02em;
     }
 
     main {
@@ -84,6 +71,17 @@
       color: var(--accent);
     }
 
+    .contact {
+      margin-top: 42px;
+    }
+
+    .email {
+      font-family: "Roboto Mono", monospace;
+      font-size: 0.9rem;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
     footer {
       padding: 24px 40px;
       border-top: 1px solid var(--border);
@@ -93,12 +91,16 @@
     }
 
     @media (max-width: 600px) {
-      header {
-        padding: 24px;
-      }
-
       main {
         padding: 60px 20px;
+      }
+
+      h1 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+      }
+
+      .tagline {
+        font-size: 1.1rem;
       }
 
       footer {
@@ -111,24 +113,30 @@
 
 <body>
 
-
   <main>
     <section class="hero">
+
       <h1>
-        Building <span class="accent">intelligent perception</span> for the real world.
+        <span class="accent">Robust</span> perception for autonomous machines.
       </h1>
 
+      <p class="tagline">
+        Huntington Avenue Technologies develops AI and sensing technologies for machines operating where conventional
+        computer vision fails. We work with organizations on challenging machine learning problems.
+      </p>
 
-  <p class="tagline">
-    Huntington Avenue Technologies develops AI and perception systems that help machines understand, navigate, and interact with the world around them.
-  </p>
-</section>
+      <p class="contact">
+        Interested in working with us?<br>
+        <span class="email">info@huntingtonavetech.com</span>
+      </p>
 
-
+    </section>
   </main>
 
   <footer>
     &copy; 2026 Huntington Avenue Technologies LLC
   </footer>
+
 </body>
+
 </html>
